@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+}
+section {
+  background-color: #f4d03f;
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 35px;
+}
+#game {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  margin: 25px auto;
+  border: none;
+}
+.square {
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 60px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: transform 2s;
+}
+.square.clicked {
+  transform: scale(1);
+}
+.square:hover:not(.match) {
+  background-color: #ccc9c9;
+}
+.square:first-of-type {
+  border-top-left-radius: 15px;
+  border-left: transparent;
+}
+.square:first-of-type,
+.square:nth-child(2),
+.square:nth-child(3) {
+  border-top: transparent;
+}
+.square:last-of-type,
+.square:nth-child(7),
+.square:nth-child(8) {
+  border-bottom: transparent;
+}
+.square:nth-child(7) {
+  border-left: transparent;
+}
+.square:last-of-type {
+  border-right: transparent;
+}
+.square:nth-child(4) {
+  border-left: transparent;
+}
+.square:nth-child(6) {
+  border-right: transparent;
+}
+.square:nth-child(3) {
+  border-top-right-radius: 15px;
+  border-right: transparent;
+}
+.square:nth-child(7) {
+  border-bottom-left-radius: 15px;
+}
+.square:last-of-type {
+  border-bottom-right-radius: 15px;
+}
+h1 {
+  width: 600px;
+  height: 35px;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 15px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.match {
+  background-color: #82cd47;
+}
+button {
+  width: 200px;
+  height: 45px;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #16a085;
+  color: #fff;
+  font-size: 23px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  border: 1px solid #16a085;
+  background-color: transparent;
+  color: #16a085;
+}
+#score {
+  width: 600px;
+  height: 35px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+#score li:first-of-type {
+  color: #f4d03f;
+}
+#score li:last-of-type {
+  color: #16a085;
+}
