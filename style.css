@@ -14,21 +14,21 @@ section {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding: 35px;
+  padding: 50px;
 }
 #game {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   margin: 25px auto;
   border: none;
 }
 .square {
   background-color: transparent;
   border: 1px solid #fff;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 900;
   display: flex;
   justify-content: center;
@@ -79,7 +79,7 @@ section {
   border-bottom-right-radius: 15px;
 }
 h1 {
-  width: 600px;
+  width: 400px;
   height: 35px;
   font-size: 35px;
   text-align: center;
@@ -110,7 +110,7 @@ button:hover {
   color: #16a085;
 }
 #score {
-  width: 600px;
+  width: 400px;
   height: 35px;
   margin: 0 auto;
   background-color: #fff;
