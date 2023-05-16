@@ -17,8 +17,8 @@ section {
   padding: 35px;
 }
 #game {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: repeat(3, 200px);
